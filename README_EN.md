@@ -1,6 +1,6 @@
 # security-handbook · Security Attack & Defense Handbook
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/wdfdsyhb/security-handbook/actions/workflows/lint.yml/badge.svg)](https://github.com/wdfdsyhb/security-handbook/actions/workflows/lint.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > 620 bug bounty writeups and 64+ field sources, digested and reorganized into a 22-chapter Chinese handbook: read it cover to cover, or jump in by chapter as a lookup manual, from reconnaissance all the way to red-vs-blue exercise playbooks.
 >
