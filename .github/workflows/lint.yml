@@ -1,0 +1,30 @@
+name: lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check internal relative links
+        run: |
+          python - <<'PY'
+          import re, sys, pathlib
+          bad = []
+          for p in pathlib.Path('.').rglob('*.md'):
+              for m in re.finditer(r'\]\(([^)#\s]+)', p.read_text(encoding='utf-8')):
+                  link = m.group(1)
+                  if link.startswith(('http://', 'https://', 'mailto:', '#', 'data:')):
+                      continue
+                  if not (p.parent / link).exists():
+                      bad.append(f'{p}: broken link -> {link}')
+          if bad:
+              print('\n'.join(bad)); sys.exit(1)
+          print('all internal links OK')
+          PY
