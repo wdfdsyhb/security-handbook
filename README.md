@@ -1,6 +1,11 @@
-# 安全攻防实战手册
+# security-handbook · 安全攻防实战手册
 
-> 一本从 64+ 份实战资料、620 条 bug bounty writeup、GitHub 开源方法论项目中提炼整理的中文攻防教程书。
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+> 620 条 bug bounty writeup 和 64+ 份实战资料消化后重排成 22 章中文教程书：顺序读打基础，按目录跳当查询手册，从信息收集一路覆盖到护网红蓝对抗。
+>
+> English: A 22-chapter Chinese attack-and-defense handbook distilled from 620 bug bounty writeups and 64+ field sources — read it cover to cover or jump in by chapter.
+
 > 整理者：wdfdsyhb · 持续更新 · 最后更新 2026-10-04
 
 ## 这本书是什么
@@ -75,3 +80,9 @@
 2. **实战查**：拿到目标先看 03（信息收集），命中哪类洞就翻对应章节的 checklist。
 3. **面试备**：22 章速查 + 17/18 章攻防两张图。
 4. **写报告**：19 章模板 + 20 章合规自检。
+
+---
+
+## English
+
+Full English documentation: [README_EN.md](README_EN.md)
