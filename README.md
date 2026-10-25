@@ -1,6 +1,6 @@
 # security-handbook · 安全攻防实战手册
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/wdfdsyhb/security-handbook/actions/workflows/lint.yml/badge.svg)](https://github.com/wdfdsyhb/security-handbook/actions/workflows/lint.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > 620 条 bug bounty writeup 和 64+ 份实战资料消化后重排成 22 章中文教程书：顺序读打基础，按目录跳当查询手册，从信息收集一路覆盖到护网红蓝对抗。
 >
