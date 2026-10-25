@@ -20,7 +20,7 @@ jobs:
           for p in pathlib.Path('.').rglob('*.md'):
               for m in re.finditer(r'\]\(([^)#\s]+)', p.read_text(encoding='utf-8')):
                   link = m.group(1)
-                  if link.startswith(('http://', 'https://', 'mailto:', '#', 'data:')):
+                  if link.startswith(('http://', 'https://', 'mailto:', '#', 'data:', 'javascript:')):
                       continue
                   if not (p.parent / link).exists():
                       bad.append(f'{p}: broken link -> {link}')
